@@ -1,0 +1,183 @@
+.icon {
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 70%;
+}
+
+.icon.weather {
+    background-color: #29abe2;
+    background-image: url(../images/app-icons/weather.png);
+    background-size: 70% auto;
+}
+
+.icon.mail {
+    background-color: #52c5d0;
+    background-image: url(../images/app-icons/mail.png);
+    background-size: 70% auto;
+}
+
+.icon.music {
+    background-color: #f38133;
+    background-image: url(../images/app-icons/music.png);
+}
+
+.icon.browser {
+    background-color: #ed453a;
+    background-image: url(../images/app-icons/browser.png);
+}
+
+.icon.app {
+    background-color: #6ec05c;
+    background-image: url(../images/app-icons/app.png);
+}
+
+/* Border Radius for each OS: */
+.isiOS .icon {
+    border-radius: 10px;
+}
+
+.isAndroid .icon {
+    border-radius: 50%;
+}
+
+.isWindows .icon {
+    border-radius: 0;
+}
+
+.isWindows p {
+    color: #fff;
+}
+
+/* Popup Demo Styles */
+#popupMessageTarget {
+    opacity: 0;
+    font-size: 12pt;
+    line-height: 14pt;
+    font-family: 'HelveticaNeue-Light';
+    color: #007aff;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.animatePopupMessage {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: updatePopupMessage;
+}
+
+@-webkit-keyframes updatePopupMessage {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes updatePopupMessage {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.popover-buttons {
+    margin-bottom: 20px;
+    padding: 0 40px;
+}
+
+.popover-buttons > .button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    border: solid 1px #007aff;
+    padding: 4px 15px;
+    border-left: none;
+    background-color: rgba(255, 255, 255, .65);
+    width: auto;
+    overflow-x: hidden;
+    -webkit-transition: none;
+    transition: none;
+    font-size: 10pt;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -webkit-box-flex: 1;
+    -wekbit-flex: 1;
+    text-align: center;
+}
+
+.popover-buttons > .button:first-of-type {
+    border-left: solid 1px #007aff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.popover-buttons > .button:last-of-type {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.popover-buttons > .button:hover {
+    color: #fff;
+    background-color: #007aff;
+    border-left-color: #fff !important;
+}
+
+.isWindows section > .popover-buttons > .button:first-of-type,
+.isWindows section > .popover-buttons > .button:last-of-type {
+    background-color: #000;
+    border-color: #fff;
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.isWindows section > .popover-buttons > .button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000 !important;
+}
+
+.isAndroid .popover-buttons > .button {
+    border-radius: 0 !important;
+}
+
+#select-response,
+#switch-response,
+#deletable-response,
+#fruitsChoice,
+#desertsChoice {
+    color: #007aff;
+    text-transform: capitalize;
+}
+
+.sheet .button {
+    min-width: 200px;
+    width: 80%;
+}
+
+.twitter-image {
+    width: 48px;
+    height: 48px;
+}
+
+.twitter-user-name {
+    font-weight: bold;
+}
